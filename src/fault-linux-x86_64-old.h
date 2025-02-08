@@ -14,7 +14,7 @@
    You should have received a copy of the GNU General Public License
    along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
-#include <asm/sigcontext.h>
+#include <signal.h>
 
 #define SIGSEGV_FAULT_HANDLER_ARGLIST  int sig, struct sigcontext sc
 #define SIGSEGV_FAULT_CONTEXT  (&sc)
